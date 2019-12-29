@@ -1,0 +1,44 @@
+@echo off
+title[crackme 0.2]
+setlocal=enableextensions=disabledelayedexpansion
+set+=aetxscfimno
+:.
+set\=<nul
+more/c<nul
+set/p"\=Password>
+if;not;defined;\;goto:.
+set:=<nul
+set/a.=\
+set..=01
+set/a...=%random%%%1
+:..
+set.=%.:~1%
+if;defined,.,(
+set/a"..+=0%+:~-8,1%21%+:~-5,-4%>>011
+goto:..)
+2>nul;set/a".=%*1
+if;%.%;neq;1;exit
+set/a.=\%%0%+:~-8,1%7
+set/a".=\/..*(.+..)
+call>nul;:·:..:··:,%.%;%+:~-10,1%%+:~-6,1%h%+:~-1%
+if;not;::%;%;neq;::%+:~8,1%%+:~,1%%+:~9,1%%+:~7,1%%+:~,1%%+:~5,1%%+:~10,1%::;(
+echo+exit|cmd/q/k;prompt,Password$scorrecta.$_crackme$s0.2$spor$s%...:~-2,1%%+:~-10,1%%...:~-1%maniac
+pause>nul);else;cls
+goto:.
+:·
+set/a..=%.:~,1%+1-1
+set/a"..=1%..%<<0%+:~-8,1%8
+set/a":+=..
+set.=%.:~1%
+set/a"...+=0%+:~-8,-7%D431>>0%+:~3,1%%+:~-5,1%
+if;defined,.,goto:·:eof
+call;%2 %+:~-1%%+:~-5,1%%+:~-5,1%
+set/a".=%1/...+:
+set...=%+:~-4,-3%:%+:~-10,-9%%+:~-1%%+:~-9,-8%%+:~-5,-4%%+:~-6,-5%%+:~-11,-10%%+:~-3,-2%%+:~-2,-1%Gr
+set;=<nul
+:··
+set/a..=%.:~-1%+1-1
+call;%+:~4,1%%+:~1,1%%+:~2,1%;=%;%%%...:~%..%,1%%
+set.=%.:~,-1%
+if;defined,.,goto:··
+goto:eof
